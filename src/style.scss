@@ -165,17 +165,17 @@
   bottom: 365px;
   transition: transform 1s;
   pointer-events: none;
-  * {
-    transform: translateX(-50%) perspective(150px) rotateX(50deg);
-  }
   &:hover .paper {
-    transform: translateX(-50%) scale(4);    
+    animation: .5s paper forwards;
   }
   &:hover img {
-    transform: translateX(-50%) scale(4);    
-    top: 50px;
+    animation: .5s capoo forwards;
+  }
+  &:hover .hurrays {
+    display: block;
   }
   .paper {
+    animation: .5s paper-r forwards;
     position: absolute;
     display: inline-block;
     background: #fff;
@@ -185,12 +185,90 @@
     box-shadow: 2px 2px 5px #000;
   }
   img {
+    animation: .5s capoo-r forwards;
     top: 20px;
     position: absolute;
     height: 50px;
     cursor: pointer;
   }
 }
+.hurrays {
+  display: none;
+  position: absolute;
+  visibility: hidden;
+  left: 50%;
+  right: 50%;
+  animation: 1s .5s hurray infinite;
+}
+.hurray {
+  position: absolute;
+  width: 10px;
+  height: 60px;
+  top: -180px;
+  background: yellow;
+}
+.hurray:nth-child(1) {
+  transform: rotate(-30deg);
+  left: -150px;
+}
+.hurray:nth-child(2) {
+  transform: rotate(-10deg);
+  top: -190px;
+  left: -55px;
+}
+.hurray:nth-child(3) {
+  transform: rotate(10deg);
+  top: -190px;
+  left: 35px;
+}
+.hurray:nth-child(4) {
+  transform: rotate(30deg);
+  left: 125px;
+}
+@keyframes paper {
+  from {
+    transform: translateX(-50%) scale(1) perspective(150px) rotateX(50deg);
+  }
+  to {
+    transform: translateX(-50%) rotateX(0) scale(4) perspective(0);    
+  }
+}
+@keyframes paper-r {
+  
+  from {
+    transform: translateX(-50%) rotateX(0) scale(4) perspective(0);    
+  }
+  to {
+    transform: translateX(-50%) scale(1) perspective(150px) rotateX(50deg);
+  }
+}
+@keyframes capoo {
+  from {
+    top: 20px;
+    transform: translateX(-50%) scale(1) perspective(150px) rotateX(50deg);
+  }
+  to {
+    top: 50px;
+    transform: translateX(-50%) rotateX(0) scale(4) perspective(0);    
+  }
+}
+@keyframes capoo-r {
+  from {
+    top: 50px;
+    transform: translateX(-50%) rotateX(0) scale(4) perspective(0);    
+  }
+  to {
+    top: 20px;
+    transform: translateX(-50%) scale(1) perspective(150px) rotateX(50deg);
+  }
+}
+@keyframes hurray {
+  0% { visibility: visible; }
+  50% { visibility: visible; }
+  51% { visibility: hidden; }
+  100% { visibility: hidden; }
+}
+
 .carpet {
   position: absolute;
   bottom: 0;

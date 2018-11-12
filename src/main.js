@@ -2,13 +2,14 @@ import html from '../main.html';
 import { physics, styler, value, listen } from 'popmotion';
 
 let isButtonsOn = [false, false, false, false, false];
+let buttonListener;
 
 export const setMain = () => {
   const main = document.querySelector('.main-scene');
   main.style.display = 'flex';
   main.innerHTML = html;
   const buttons = document.querySelector('.buttons');
-  listen(buttons, 'click').start(buttonClickHandler);
+  buttonListener = listen(buttons, 'click').start(buttonClickHandler);
 };
 
 function buttonClickHandler(e) {
@@ -60,6 +61,7 @@ function setLight() {
         'radial-gradient(circle at 50% 10%, rgba(0,0,0,0.0) 0%, rgba(0,0,0,1) 100%)';
       const capoo = document.querySelector('.capoo');
       capoo.style['pointer-events'] = 'all';
+      buttonListener.stop();
       capoo.querySelector('img').onclick = () =>
         alert('恭喜你成功惹，請用截圖換獎品XD');
       break;
