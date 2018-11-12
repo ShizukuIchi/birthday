@@ -12,6 +12,7 @@
     "popmotion": "^8.5.0"
   },
   "devDependencies": {
+    "cssnano": "^4.1.7",
     "sass": "^1.14.3"
   }
 }
