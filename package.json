@@ -8,6 +8,7 @@
     "build": "parcel build index.html"
   },
   "dependencies": {
+    "main.js": "^0.0.1",
     "popmotion": "^8.5.0"
   },
   "devDependencies": {

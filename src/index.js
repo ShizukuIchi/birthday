@@ -46,7 +46,7 @@ const checkBounce = () => {
     .start(giftScale);
 };
 
-const shadowManager = v => {
+const changeShadow = v => {
   if (v > 0) return;
   if (v < -100) {
     v = -100;
@@ -59,7 +59,7 @@ const gravity = physics({
   acceleration: 2000,
   restSpeed: false,
 }).start(v => {
-  shadowManager(v);
+  changeShadow(v);
   giftY.update(v);
   checkBounce(v);
 });
@@ -93,6 +93,9 @@ listen(gift, 'mouseleave').start(e => {
 });
 
 listen(gift, 'click').start(() => {
+  import('./main.js').then(module => {
+    module.setMain();
+  });
   giftStyler.set('scale', 2);
   document.querySelector('.main-scene').style.animation = '2s circle forwards';
   setTimeout(() => {

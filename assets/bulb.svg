@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="Layer_1"
+   x="0px"
+   y="0px"
+   viewBox="0 0 512 512"
+   style="enable-background:new 0 0 512 512;"
+   xml:space="preserve"
+   sodipodi:docname="bulb.svg"
+   inkscape:version="0.92.2 2405546, 2018-03-11"><metadata
+   id="metadata43"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs
+   id="defs41" /><sodipodi:namedview
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1"
+   objecttolerance="10"
+   gridtolerance="10"
+   guidetolerance="10"
+   inkscape:pageopacity="0"
+   inkscape:pageshadow="2"
+   inkscape:window-width="640"
+   inkscape:window-height="480"
+   id="namedview39"
+   showgrid="false"
+   inkscape:zoom="0.4609375"
+   inkscape:cx="256"
+   inkscape:cy="256"
+   inkscape:window-x="0"
+   inkscape:window-y="0"
+   inkscape:window-maximized="0"
+   inkscape:current-layer="Layer_1" />
+<g
+   transform="rotate(180,255.50014,255.5)"
+   id="g6">
+	<g
+   id="g4">
+		<path
+   d="M 424.813,154.307 C 416.28,73.24 351.427,8.387 271.213,-0.147 266.093,-0.147 260.973,-1 255,-1 c -5.973,0 -11.093,0.853 -16.213,0.853 -80.214,9.387 -145.067,74.24 -153.6,154.454 -5.973,54.613 13.653,108.373 52.907,145.92 21.333,20.48 34.987,44.373 40.107,67.413 v 100.693 c 0,5.12 3.413,8.533 8.533,8.533 h 12.8 l 15.36,20.48 C 221.72,505.88 231.107,511 242.2,511 h 25.6 c 11.093,0 21.333,-5.12 27.307,-13.653 l 15.36,-20.48 h 12.8 c 5.12,0 8.533,-3.413 8.533,-8.533 V 367.64 c 4.267,-23.04 18.773,-46.933 40.107,-67.413 39.253,-38.4 58.88,-91.307 52.906,-145.92 z M 220.867,212.333 H 203.8 c -9.387,0 -17.067,-7.68 -17.067,-17.067 0,-9.387 7.68,-17.067 17.067,-17.067 9.387,0 17.067,7.68 17.067,17.067 z m 51.2,145.067 h -34.133 v -128 h 34.133 z m 42.666,17.067 v 17.067 h -25.6 c -5.12,0 -8.533,3.413 -8.533,8.533 0,5.12 3.413,8.533 8.533,8.533 h 25.6 v 17.067 h -51.2 c -5.12,0 -8.533,3.413 -8.533,8.533 0,5.12 3.413,8.533 8.533,8.533 h 51.2 V 459.8 H 306.2 203.8 195.267 v -17.067 h 25.6 c 5.12,0 8.533,-3.413 8.533,-8.533 0,-5.12 -3.413,-8.533 -8.533,-8.533 h -25.6 V 408.6 h 51.2 c 5.12,0 8.533,-3.413 8.533,-8.533 0,-5.12 -3.413,-8.533 -8.533,-8.533 h -51.2 v -17.067 z m -33.28,112.64 c -3.413,4.267 -8.533,6.827 -13.653,6.827 h -25.6 c -5.12,0 -10.24,-2.56 -13.653,-6.827 l -7.68,-10.24 h 68.267 z m 78.507,-199.68 c -21.333,21.333 -36.693,45.227 -43.52,69.973 h -27.307 v -128 H 306.2 c 18.773,0 34.133,-15.36 34.133,-34.133 0,-18.773 -15.36,-34.133 -34.133,-34.133 -18.773,0 -34.133,15.36 -34.133,34.133 v 17.067 h -34.133 v -17.067 c 0,-18.773 -15.36,-34.133 -34.133,-34.133 -18.773,0 -34.133,15.36 -34.133,34.133 0,18.773 15.36,34.133 34.133,34.133 h 17.067 v 128 H 193.56 c -6.827,-24.747 -22.187,-48.64 -43.52,-69.973 -35.84,-34.133 -52.907,-81.92 -47.787,-131.413 8.533,-72.533 66.56,-130.56 139.093,-139.093 4.267,0 8.533,-0.853 13.653,-0.853 5.12,0 9.387,0.853 13.653,0.853 72.533,8.533 131.413,66.56 139.093,139.093 5.122,49.493 -11.945,97.279 -47.785,131.413 z m -70.827,-75.094 v -17.067 c 0,-9.387 7.68,-17.067 17.067,-17.067 9.387,0 17.067,7.68 17.067,17.067 0,9.387 -7.68,17.067 -17.067,17.067 z"
+   id="path2"
+   inkscape:connector-curvature="0" />
+	</g>
+</g>
+<g
+   id="g8">
+</g>
+<g
+   id="g10">
+</g>
+<g
+   id="g12">
+</g>
+<g
+   id="g14">
+</g>
+<g
+   id="g16">
+</g>
+<g
+   id="g18">
+</g>
+<g
+   id="g20">
+</g>
+<g
+   id="g22">
+</g>
+<g
+   id="g24">
+</g>
+<g
+   id="g26">
+</g>
+<g
+   id="g28">
+</g>
+<g
+   id="g30">
+</g>
+<g
+   id="g32">
+</g>
+<g
+   id="g34">
+</g>
+<g
+   id="g36">
+</g>
+</svg>
