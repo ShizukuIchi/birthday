@@ -1,5 +1,5 @@
 import html from '../main.html';
-import { physics, styler, value, listen } from 'popmotion';
+import { listen, timeline, styler } from 'popmotion';
 
 let isButtonsOn = [false, false, false, false, false];
 let buttonListener;
@@ -10,6 +10,7 @@ export const setMain = () => {
   main.innerHTML = html;
   const buttons = document.querySelector('.buttons');
   buttonListener = listen(buttons, 'click').start(buttonClickHandler);
+  setHint();
 };
 
 function buttonClickHandler(e) {
@@ -85,4 +86,53 @@ function setLight() {
       room.style['-webkit-mask-image'] =
         'radial-gradient(circle at 50% 10%, rgba(0,0,0,0.95) 0%, rgba(0,0,0,1) 5%)';
   }
+}
+
+function setHint() {
+  const hintStyler = styler(document.querySelector('.hint'));
+  timeline([
+    '600',
+    [
+      {
+        track: 'skewX',
+        from: '0deg',
+        to: '-20deg',
+        duration: 100,
+      },
+      {
+        track: 'x',
+        from: 0,
+        to: -window.innerWidth,
+        duration: 2000,
+      },
+    ],
+    '-300',
+    {
+      track: 'skewX',
+      from: '-20deg',
+      to: '10deg',
+      duration: 200,
+    },
+    {
+      track: 'skewX',
+      from: '10deg',
+      to: '0deg',
+      duration: 100,
+    },
+    '500',
+    [
+      {
+        track: 'skewX',
+        from: '0deg',
+        to: '-20deg',
+        duration: 500,
+      },
+      {
+        track: 'x',
+        from: -window.innerWidth,
+        to: -window.innerWidth * 2,
+        duration: 2000,
+      },
+    ],
+  ]).start(hintStyler.set);
 }

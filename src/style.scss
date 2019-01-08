@@ -46,7 +46,7 @@
   height: 100%;
   -webkit-clip-path: circle(0%);
   clip-path: circle(0%);
-  background: #FFF;
+  background: #fff;
   display: none;
   justify-content: center;
   align-items: center;
@@ -61,8 +61,12 @@
 }
 
 @keyframes fade-in {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .buttons {
@@ -74,37 +78,38 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background: rgb(240,240,240);
+  background: rgb(240, 240, 240);
 }
-.button{
+.button {
   background-image: -webkit-linear-gradient(top, #f4f1ee, #fff);
   background-image: linear-gradient(top, #f4f1ee, #fff);
   border: 0;
   outline: 0;
   border-radius: 50%;
-  box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, .3), inset 0px 4px 1px 1px white, inset 0px -3px 1px 1px rgba(204,198,197,.5);
+  box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.3), inset 0px 4px 1px 1px white,
+    inset 0px -3px 1px 1px rgba(204, 198, 197, 0.5);
   height: 70px;
   position: relative;
-  width: 70px;			
-  transition: all .1s linear;
+  width: 70px;
+  transition: all 0.1s linear;
   font-size: 22px;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, .3);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
   color: transparent;
   cursor: pointer;
 }
 
-.button:hover{
+.button:hover {
   background-image: -webkit-linear-gradient(top, #fff, #f4f1ee);
   color: red;
   background-image: linear-gradient(top, #fff, #f4f1ee);
 }
 
-
-.button:active{
+.button:active {
   background-image: -webkit-linear-gradient(top, #efedec, #f7f4f4);
   background-image: linear-gradient(top, #efedec, #f7f4f4);
-  color: rgba(0, 0, 0, .2);
-  box-shadow: 0 3px 5px 0 rgba(0,0,0,.4), inset 0px -3px 1px 1px rgba(204,198,197,.5);
+  color: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.4),
+    inset 0px -3px 1px 1px rgba(204, 198, 197, 0.5);
 }
 
 .test {
@@ -115,7 +120,11 @@
   right: 0;
   background: #000;
   transition: all 1s;
-  -webkit-mask-image: radial-gradient(circle at 50% 20%, rgba(0,0,0,0.95) 0%, rgba(0,0,0,1) 5%);
+  -webkit-mask-image: radial-gradient(
+    circle at 50% 20%,
+    rgba(0, 0, 0, 0.95) 0%,
+    rgba(0, 0, 0, 1) 5%
+  );
   pointer-events: none;
   box-shadow: 5px 5px 30px #000;
 }
@@ -141,7 +150,7 @@
 }
 
 .bulb {
-  opacity: .1;
+  opacity: 0.1;
 }
 
 .items {
@@ -159,23 +168,23 @@
 }
 .capoo {
   position: absolute;
-  text-align: center;  
+  text-align: center;
   right: 0;
   left: 0;
   bottom: 365px;
   transition: transform 1s;
   pointer-events: none;
   &:hover .paper {
-    animation: .5s paper forwards;
+    animation: 0.5s paper forwards;
   }
   &:hover img {
-    animation: .5s capoo forwards;
+    animation: 0.5s capoo forwards;
   }
   &:hover .hurrays {
     display: block;
   }
   .paper {
-    animation: .5s paper-r forwards;
+    animation: 0.5s paper-r forwards;
     position: absolute;
     display: inline-block;
     background: #fff;
@@ -185,7 +194,7 @@
     box-shadow: 2px 2px 5px #000;
   }
   img {
-    animation: .5s capoo-r forwards;
+    animation: 0.5s capoo-r forwards;
     top: 20px;
     position: absolute;
     height: 50px;
@@ -198,7 +207,7 @@
   visibility: hidden;
   left: 50%;
   right: 50%;
-  animation: 1s .5s hurray infinite;
+  animation: 1s 0.5s hurray infinite;
 }
 .hurray {
   position: absolute;
@@ -230,13 +239,12 @@
     transform: translateX(-50%) scale(1) perspective(150px) rotateX(50deg);
   }
   to {
-    transform: translateX(-50%) rotateX(0) scale(4) perspective(0);    
+    transform: translateX(-50%) rotateX(0) scale(4) perspective(0);
   }
 }
 @keyframes paper-r {
-  
   from {
-    transform: translateX(-50%) rotateX(0) scale(4) perspective(0);    
+    transform: translateX(-50%) rotateX(0) scale(4) perspective(0);
   }
   to {
     transform: translateX(-50%) scale(1) perspective(150px) rotateX(50deg);
@@ -249,13 +257,13 @@
   }
   to {
     top: 50px;
-    transform: translateX(-50%) rotateX(0) scale(4) perspective(0);    
+    transform: translateX(-50%) rotateX(0) scale(4) perspective(0);
   }
 }
 @keyframes capoo-r {
   from {
     top: 50px;
-    transform: translateX(-50%) rotateX(0) scale(4) perspective(0);    
+    transform: translateX(-50%) rotateX(0) scale(4) perspective(0);
   }
   to {
     top: 20px;
@@ -263,10 +271,18 @@
   }
 }
 @keyframes hurray {
-  0% { visibility: visible; }
-  50% { visibility: visible; }
-  51% { visibility: hidden; }
-  100% { visibility: hidden; }
+  0% {
+    visibility: visible;
+  }
+  50% {
+    visibility: visible;
+  }
+  51% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: hidden;
+  }
 }
 
 .carpet {
@@ -277,4 +293,20 @@
   height: 150px;
   background: red;
   border-top: 3px solid darkred;
+}
+.hint-container {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  bottom: 0;
+  left: 100%;
+  width: 100%;
+  right: 0;
+}
+.hint {
+  font-size: 5em;
+  color: white;
+  font-weight: 500;
 }
