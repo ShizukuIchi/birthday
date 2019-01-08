@@ -1,1 +1,5 @@
-"# birthday"  git init git add README.md git commit -m "first commit" git remote add origin git@github.com:ShizukuIchi/birthday.git git push -u origin master
+# Birthday
+
+A big gift for you.
+
+![Gift](https://i.imgur.com/9uzBY3P.png)
